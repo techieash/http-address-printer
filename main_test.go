@@ -5,7 +5,6 @@ import (
 	"testing"
 )
 
-
 func TestForMultipleAddressWithFlag(t *testing.T) {
 
 	os.Args = append(os.Args, "adjust.com")

@@ -6,7 +6,6 @@ import (
 	"http-address-printer/util"
 )
 
-
 func main() {
 
 	var concurrencyLimit int
@@ -23,7 +22,7 @@ func main() {
 			urls[index] = input
 		}
 	}
-	results := util.BoundedParallelGet(urls, concurrencyLimit);
+	results := util.BoundedParallelGet(urls, concurrencyLimit)
 	for _, value := range results {
 		fmt.Println(value)
 	}

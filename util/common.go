@@ -9,6 +9,6 @@ func IsUrl(str string) bool {
 
 func ConvertToURL(str string) string {
 	u, _ := url.Parse(str)
-	u.Scheme="http"
+	u.Scheme = "http"
 	return u.String()
 }
